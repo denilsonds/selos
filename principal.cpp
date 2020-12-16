@@ -2,7 +2,6 @@
 #include "ui_principal.h"
 
 #define caminho "C:\\Users\\Pro\\Documents\\Projetos\\Selos\\carros.sqlite"
-
 Principal::Principal(QWidget *parent): QMainWindow(parent)
   , ui(new Ui::Principal)
 {
