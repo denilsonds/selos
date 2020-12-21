@@ -8,6 +8,7 @@
 #include <QMessageBox>
 #include <QTableWidgetItem>
 #include <QDebug>
+#include <QRegExp>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Principal; }
@@ -18,6 +19,7 @@ class Principal : public QMainWindow
     Q_OBJECT
 
 public:
+    void ColunsAlternativecolor();
     QStringList cores;
     QStringList marcas;
     void apagarForm();
@@ -28,9 +30,13 @@ public:
 private slots:
     void on_pbSalvar_clicked();
 
+    void on_cbTipo_currentTextChanged(const QString &arg1);
+
 private:
     void preencheTabela();
     void setTabela(QString valor, int linha, int col);
+    void desabilitaCampos();
+    void abilitaCampos();
     Ui::Principal *ui;
 };
 #endif // PRINCIPAL_H

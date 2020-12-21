@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>416</width>
-    <height>361</height>
+    <width>422</width>
+    <height>415</height>
    </rect>
   </property>
   <property name="font">
@@ -42,24 +42,24 @@
     </item>
     <item>
      <layout class="QFormLayout" name="formLayout">
-      <item row="0" column="0">
+      <item row="1" column="0">
        <widget class="QLabel" name="label_2">
         <property name="text">
          <string>Ano/Modelo:</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="1">
+      <item row="1" column="1">
        <widget class="QLineEdit" name="leAM"/>
       </item>
-      <item row="1" column="0">
+      <item row="2" column="0">
        <widget class="QLabel" name="label_3">
         <property name="text">
          <string>Marca:</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="1">
+      <item row="2" column="1">
        <widget class="QComboBox" name="cbMarca">
         <item>
          <property name="text">
@@ -68,14 +68,14 @@
         </item>
        </widget>
       </item>
-      <item row="2" column="0">
+      <item row="3" column="0">
        <widget class="QLabel" name="label_4">
         <property name="text">
          <string>Cor:</string>
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
+      <item row="3" column="1">
        <widget class="QComboBox" name="cbCor">
         <item>
          <property name="text">
@@ -84,17 +84,17 @@
         </item>
        </widget>
       </item>
-      <item row="3" column="0">
+      <item row="4" column="0">
        <widget class="QLabel" name="label_5">
         <property name="text">
          <string>Placa:</string>
         </property>
        </widget>
       </item>
-      <item row="3" column="1">
+      <item row="4" column="1">
        <widget class="QLineEdit" name="lePlaca"/>
       </item>
-      <item row="4" column="1">
+      <item row="5" column="1">
        <spacer name="verticalSpacer">
         <property name="orientation">
          <enum>Qt::Vertical</enum>
@@ -107,7 +107,7 @@
         </property>
        </spacer>
       </item>
-      <item row="5" column="1">
+      <item row="6" column="1">
        <widget class="QPushButton" name="pbSalvar">
         <property name="maximumSize">
          <size>
@@ -120,6 +120,32 @@
         </property>
        </widget>
       </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Tipo:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="cbTipo">
+        <item>
+         <property name="text">
+          <string>Selecione</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Carro</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Moto</string>
+         </property>
+        </item>
+       </widget>
+      </item>
      </layout>
     </item>
     <item>
@@ -130,6 +156,11 @@
       <attribute name="verticalHeaderStretchLastSection">
        <bool>true</bool>
       </attribute>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
       <column>
        <property name="text">
         <string>Ano/Modelo</string>
@@ -150,6 +181,11 @@
         <string>Placa</string>
        </property>
       </column>
+      <column>
+       <property name="text">
+        <string>Tipo</string>
+       </property>
+      </column>
      </widget>
     </item>
    </layout>
@@ -159,7 +195,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>416</width>
+     <width>422</width>
      <height>21</height>
     </rect>
    </property>
